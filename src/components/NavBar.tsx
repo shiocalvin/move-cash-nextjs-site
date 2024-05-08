@@ -1,10 +1,28 @@
-import React from 'react'
-import MaxWidthWrapper from './MaxWidthWrapper'
+import React from "react";
+import MaxWidthWrapper from "./MaxWidthWrapper";
+import NavItem from "./NavItem";
+import CustomButton from "./CustomButton";
 
 export default function NavBar() {
   return (
-    <MaxWidthWrapper>
-        <div>NavBar</div>
-    </MaxWidthWrapper>
-  )
+    <div className="hidden md:block">
+      <MaxWidthWrapper>
+      <div className="flex flex-row justify-between items-center py-2">
+            <div>
+              <h1 className="text-base font-semibold tracking-tight text-primary-green">
+                MoveCash
+              </h1>
+            </div>
+            <div className="flex flex-row items-center justify-center gap-7 lg:gap-20">
+              <NavItem link={"/about"} name={"about"} />
+              <NavItem link={"/about"} name={"support"} />
+              <NavItem link={"/about"} name={"features"} />
+              <NavItem link={"/about"} name={"community"} />
+              <NavItem link={"/about"} name={"register"} />
+            </div>
+            <CustomButton name={"Login Now"} />
+          </div>
+      </MaxWidthWrapper>
+    </div>
+  );
 }
