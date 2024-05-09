@@ -7,7 +7,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -17,14 +17,12 @@ const config = {
         "2xl": "1400px",
       },
     },
-    colors: {
-      'primary-green': "#1A4D2E",
-      'secondary-green': "#4F6F52",
-      'beige-full': "#E8DFCA",
-      'beige-faint': '#F5EFE6'
-    },
     extend: {
       colors: {
+        'primary-green': "#1A4D2E",
+        'secondary-green': "#4F6F52",
+        'beige-full': "#E8DFCA",
+        'beige-faint': '#F5EFE6',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
